@@ -35,7 +35,7 @@ namespace HousingEstate
             public override string ToString()
              {
                   return string.Format(
-                $"Name:{Naming} \nSurname:{Surnaming} \nAge:{Ageing}");
+                $"Name: {Naming} \nSurname: {Surnaming} \nAge: {Ageing}");
              }
         
     }

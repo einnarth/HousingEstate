@@ -6,8 +6,17 @@ namespace HousingEstate
     {
         static void Main(string[] args)
         {
-            var inhabitant = new Person("Michal", "Bernát", 16);
-            Console.Write(inhabitant.ToString());
+            var michal = new Person("Michal", "Bernát", 17);
+            var zaso = new Person("Zachariáš", "Juriš", 17);
+            var riso = new Person("Richard", "Jurčo", 17);
+            Console.WriteLine(michal.ToString());
+            var michalovbyt = new Flat(666, 65, 3);
+            michalovbyt.Inhabitants.Add(michal);
+            michalovbyt.Inhabitants.Add(zaso);
+            michalovbyt.Inhabitants.Add(riso);
+
+
+                Console.WriteLine(michalovbyt.ToString());
         }
     }
 }
