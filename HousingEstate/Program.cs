@@ -9,14 +9,18 @@ namespace HousingEstate
             var michal = new Person("Michal", "Bernát", 17);
             var zaso = new Person("Zachariáš", "Juriš", 17);
             var riso = new Person("Richard", "Jurčo", 17);
-            Console.WriteLine(michal.ToString());
+            //Console.WriteLine(michal.ToString());
             var michalovbyt = new Flat(666, 65, 3);
-            michalovbyt.Inhabitants.Add(michal);
-            michalovbyt.Inhabitants.Add(zaso);
-            michalovbyt.Inhabitants.Add(riso);
+            michalovbyt.AddInhabitant(michal);
+            michalovbyt.AddInhabitant(zaso);
+            michalovbyt.AddInhabitant(riso);
 
-
-                Console.WriteLine(michalovbyt.ToString());
+            Console.WriteLine(michalovbyt.ToString());
+            foreach (var inhabitant in michalovbyt.Inhabitants)
+            {
+                Console.WriteLine(inhabitant.ToString());
+            }
         }
     }
 }
+    

@@ -2,33 +2,17 @@ namespace HousingEstate
 {
     public class Person
     {
-        private string _name;
-        private string _surname;
-        private int _age;
+        private string Naming { get; set; }
 
-        public string Naming
-        {
-            get => _name;
-            set => _name = value;
-        }
+        private string Surnaming { get; set; }
 
-        public string Surnaming
-        {
-            get => _surname;
-            set => _surname = value;
-        }
-
-        public int Ageing
-        {
-            get => _age;
-            set => _age = value;
-        }
+        private int Ageing { get; set; }
 
         public Person(string name, string surname, int age)
         {
-            this._name = name;
-            this._surname = surname;
-            this._age = age;
+            this.Naming = name;
+            this.Surnaming = surname;
+            this.Ageing = age;
         }
         
 
